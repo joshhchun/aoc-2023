@@ -25,7 +25,7 @@ fn calc_min(line: Vec<&str>) -> u32 {
 
 fn main() {
     let res: u32 = fs::read_to_string("input.txt")
-        .expect("should have read the file")
+        .expect("file should exist")
         .lines()
         .map(|line| calc_min(line.split(": ").collect::<Vec<&str>>()))
         .sum();
