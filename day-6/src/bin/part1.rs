@@ -22,8 +22,7 @@ fn main() {
 
     let (times, dist) = (&nums[0], &nums[1]);
     let res = (0..times.len()).fold(1, |acc, i| {
-        let num_wins = num_ways(&times[i], &dist[i]);
-        acc * num_wins
+        acc * num_ways(&times[i], &dist[i])
     });
     println!("{res}");
 }

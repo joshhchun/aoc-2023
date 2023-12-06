@@ -21,7 +21,6 @@ fn main() {
         .collect();
 
     let (times, dist) = (&nums[0], &nums[1]);
-    let res = num_ways(&times, &dist);
-    println!("{res}");
+    println!("{:?}", num_ways(&times, &dist));
 }
 
